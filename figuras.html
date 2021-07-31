@@ -4,24 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Figuras Geometricas</title>
 </head>
 <body>
+
     <header>
-        <h1>Figuras Geometricas</h1>
-        <p>Este es el primer talleer del curso practico de JavaScript</p>
-        <section>
-            <h2>calcula el area y perimetro de un cuadrado</h2>
-            <form>
-                <label>
-                    Escribe cuanto mide cada lado de tu cuadrado:
-                </label>
-                <input type="number" id="ladoCuadrado">
-                <button>Calcular Perimetro</button>
-                <button>Calcular Area</button>
-            </form>
-        </section>
+        <h1>Calculadora de figuras geometricas</h1>
     </header>
+
+    <main class="main-calculadoras">
+<!-- TARJETA CUADRADO ***************************************************************************-->
+        <section class="tarjeta">
+            <h2 class="tarjeta__titulo">Cuadrado ◻</h2>
+            <img src="sources/figuras-geometricas/cuadrado.png" alt="" class="tarjeta__img">
+            <form class="tarjeta__formulario">
+                <label class="tarjeta__titulo-input">Escribe cuanto mide uno de los lados.</label>
+                <input type="number" id="ladoCuadrado" class="tarjeta_input-lado">
+            </form>
+                <div class="tarjeta__botones">
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="tarjeta__boton" >Calcular Perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()" class="tarjeta__boton" >Calcular Area</button>
+                </div>
+        </section>
+<!-- TARJETA CUADRADO ***************************************************************************-->
+
+<!-- TARJETA TRIANGULO **************************************************************************-->
+    <section class="tarjeta">
+        <h2 class="tarjeta__titulo">Triangulo 🔺</h2>
+        <img src="sources/figuras-geometricas/triangulo.png" alt="" class="tarjeta__img">
+        <form class="tarjeta__formulario">
+            <label class="tarjeta__titulo-input">Escribe cuanto mide la base.</label>
+            <input type="number" id="baseTringulo" class="tarjeta_input-lado">
+            <label class="tarjeta__titulo-input">Escribe cuanto mide el lado A.</label>
+            <input type="number" id="ladoATringulo" class="tarjeta_input-lado">
+            <label class="tarjeta__titulo-input">Escribe cuanto mide el lado B.</label>
+            <input type="number" id="ladoBTringulo" class="tarjeta_input-lado">
+            <label class="tarjeta__titulo-input">Escribe cuanto mide la altura.</label>
+            <input type="number" id="alturaTringulo" class="tarjeta_input-lado">
+        </form>
+            <div class="tarjeta__botones">
+            <button type="button" onclick="calcularPerimetroTriangulo()" class="tarjeta__boton" >Calcular Perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()" class="tarjeta__boton" >Calcular Area</button>
+            </div>
+    </section>
+<!-- TARJETA TRIANGULO **************************************************************************-->
+
+<!-- TARJETA CIRCULO ****************************************************************************-->
+    <section class="tarjeta">
+        <h2 class="tarjeta__titulo">Circulo 🔵</h2>
+        <img src="sources/figuras-geometricas/circulo.png" alt="" class="tarjeta__img">
+        <form class="tarjeta__formulario">
+            <label class="tarjeta__titulo-input">Escribe cuanto mide el radio.</label>
+            <input type="number" id="radioCirculo" class="tarjeta_input-lado">
+        </form>
+            <div class="tarjeta__botones">
+            <button type="button" onclick="calcularPerimetroCirculo()" class="tarjeta__boton" >Calcular Perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()" class="tarjeta__boton" >Calcular Area</button>
+            </divirculo
+        </section>
+<!-- TARJETA CIRCULO ****************************************************************************-->
+</main>
+
+<footer>
+    <p>Curso Practico JavaScript de Platzi</p>
+    <p>🐱‍🏍 Realizado por DiegoArteaga95 👾</p>
+</footer>
+
     <script src="figuras.js"></script>
 </body>
 </html>
