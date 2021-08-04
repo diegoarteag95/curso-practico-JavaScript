@@ -5,37 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de descuentos</title>
+    <link rel="stylesheet" href="styles/calculadora-descuentos.css">
 </head>
 <body>
     <header>
     <h1>Calculadora De Descuentos</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Calcula tu descuento</h2>
-            <form>
-                <label>Valor del producto 💵</label>
-                <input type="number">
-                <label>% Descuento</label>
-                <input type="number">
-                <h2>Ó</h2>
-                <label>Cupon de Descuento</label>
-                <input type="text">
-                <button type="button">Usar Descuento</button>
-                <button type="button">Usar Cupon</button>
+    <main class="main-calculadoras">
+        <section class="tarjeta">
+            <h2 class="tarjeta__titulo">Calcula tu Descuento</h2>
+            <form class="tarjeta__formulario">
+                <label class="tarjeta__titulo-input"></label>Valor del producto 💲</label>
+                <input type="number" class="tarjeta__input" id="inputValorProducto">
+                <p id="avisoValorProducto" class="tarjeta__formulario-avisos"></p>
+                <label class="tarjeta__titulo-input">Descuento 💰</label>
+                <input type="number" class="tarjeta__input" id="inputDescuento">
+                <p id="avisoDescuento" class="tarjeta__formulario-avisos"></p>
+                <br>
+                <label class="tarjeta__titulo-input">Cupon de Descuento 🎁</label>
+                <input type="text" class="tarjeta__input" id="inputCupon">
+                <p id="avisoCupon" class="tarjeta__formulario-avisos"></p>
+                <div class="tarjeta__botones">
+                    <button type="button" class="tarjeta__boton" onclick="buttonCalcularDescuento()">Calcular Descuento</button>
+                    <button type="button" class="tarjeta__boton" onclick="buttonCupon()">Calcular Cupon</button>
+                </div>
             </form>
-            </br>
-            <div>
-                <H2>Resultado</H2>
-                <p>Valor original: <p id=""></p>
-                <p>Descuento aplicado: <p id=""></p>
-                <p>tu ahorro es: <p id=""></p>
-                <p>total a pagar: <p id=""></p>
+            <div class="tarjeta__resultado">
+                <H2 class="tarjeta__resultado-titulo">Resultado de Consulta</H2>
+                <ul>
+                    <li><strong>Valor original =</strong> <pre id="valorOriginal"></pre></li>
+                    <li><strong>Descuento Aplicado =</strong> <pre id="descuentoAplicado"></pre></li>
+                    <li><strong>Tu Ahorro Es =</strong> <pre id="ahorro"></pre></li>
+                    <li><strong>Total A Pagar =</strong> <pre id="total"></pre></li>
+                </ul>
             </div> 
-
         </section>
     </main>
+<br>
+<section class="contenedor__lista-cupones">
+    <div class="lista-cupones">
+        <h3>Solo por hoy te dejare ver los cupones!</h3>
+        <ul>
+            <li>Cupon: "gatodescuento" - Descuento = 40%</li>
+            <li>Cupon: "batidescuento" - Descuento = 35%</li>
+            <li>Cupon: "superdescuento" - Descuento = 30%</li>
+            <li>Cupon: "descuentopadre" - Descuento = 25%</li>
+            <li>Cupon: "parcedescuento" - Descuento = 20%</li>
+            <li>Cupon: "damelopormenos" - Descuento = 15%</li>
+        </ul>
+    </div>
+</section>
 
+    <footer>
+        <p>Curso Practico JavaScript de Platzi</p>
+        <p>🐱‍🏍 Realizado por DiegoArteaga95 👾</p>
+    </footer>
+    <script src="calculadora-descuentos.js"></script>
 </body>
 </html>

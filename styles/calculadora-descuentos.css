@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+body{
+    margin: 0 0;
+    background-color: #F2D541;
+}
+*{
+    font-family: 'Merriweather', serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding: 0px 20px;
+    margin-bottom: 15px;
+}
+header h1{
+    margin: 0 0;
+}
+
+/* ESTILOS TARJETAS -------------------------------------------------------- */
+.main-calculadoras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta{
+    background-color: rgba(245, 245, 245, 0.8);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:10px 10px;
+    border-radius: 20px;
+    border: 1px black solid;
+}
+.tarjeta__titulo{
+    color: black;
+    font-size: 26px;
+    margin:10px 10px;
+}
+.tarjeta__formulario{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.tarjeta__titulo-input{
+    color: black;
+    font-size: 14px;
+}
+.tarjeta__input{
+    width: 100%;
+    margin:5px 0px 10px 0px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px #2E4BF2 solid;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+.tarjeta__formulario-avisos{
+    font-style:italic;
+    font-size: 12px;
+    padding: 0px 0px 10px 0px;
+    margin: 0 0;
+    text-align: center;
+    color:rgb(170, 0, 34);
+}
+.tarjeta__botones{
+    position:relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta__boton{
+    background-color: #2E4BF2;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin: 2px 5px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+.tarjeta__boton:hover{
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb(0, 0, 0);
+    border: 3px #2E4BF2 solid;
+}
+.tarjeta__resultado{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.tarjeta__resultado-titulo{
+    margin: 30px 0px 0px 0px;
+}
+.tarjeta__resultado ul{
+    padding: 0 0;
+}
+.tarjeta__resultado li{
+    display: flex;
+    list-style: none;
+    padding: 3px 0px;
+    font-size: 14px;
+}
+.tarjeta__resultado pre{
+    margin: 0 0;
+    font-size: 15px;
+    color: #2E4BF2;
+}
+
+/* ESTILOS TARJETAS -------------------------------------------------------- */
+
+.contenedor__lista-cupones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lista-cupones{
+    border: 2px black solid;
+    border-radius: 20px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+.lista-cupones h3{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+footer p{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
