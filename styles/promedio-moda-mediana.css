@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Merriweather', serif;
+}
+body{
+    background-color: #F2F2F2;
+}
+header{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta__lista-usuario{
+    border: 2px #0D0D0D solid;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px;
+    margin: 5px 5px;
+}
+.tarjeta__titulo{
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 22px;
+}
+.tajeta__label{
+    font-size: 14px;
+}
+.tarjeta__input{
+    width: 100%;
+    margin:5px 0px 0px 0px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px #0D0D0D solid;
+    color: #0D0D0D;
+    font-size: 14px;
+    text-align: center;
+}
+.tarjeta__aviso{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: rgb(165, 0, 0);
+}
+.tarjeta__contenedor-boton{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta__boton{
+    background-color: #0D0D0D;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    width: 50%;
+    height: 30px;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+.tarjeta__boton:hover{
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb(0, 0, 0);
+    border: 3px #0D0D0D solid;
+}
+.tarjeta__lista{
+    border: 1px #0D0D0D solid;
+    height: 160px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    background-color: whitesmoke;
+}
+.tarjeta__lista li{
+    font-size: 14px;
+    list-style: none;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    float: left;
+}
+.tarjeta__borrar-elemento{
+    background-color: rgba(54, 54, 54, 0.171);
+    padding-bottom: 10px;
+}
+.tarjeta__borrar-elemento--form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta__borrar-elemento--input{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+.tarjeta__borrar-elemento--boton{
+    width: 30%;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta__input--borrar{
+    width: 100%;
+    margin:5px 0px 0px 0px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px #0D0D0D solid;
+    color: #0D0D0D;
+    font-size: 14px;
+    text-align: center;
+}
+.tarjeta__boton--elminiar{
+    background-color: #0D0D0D;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    width: 80%;
+    height: 40px;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+.tarjeta__boton--elminiar:hover{
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb(0, 0, 0);
+    border: 3px #0D0D0D solid;
+}
+
+/* *********************************************************************************************** */
+.tarjeta__calculos{
+    border: 2px #0D0D0D solid;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px;
+    margin: 5px 5px;
+}
+.tarjeta__img--contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.tarjeta__img{
+    width: 80px;
+}
+.tarjeta__subTitulo{
+    font-size: 16px;
+}
+.tarjeta__parrafo{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.tarjeta__boton-calcular--contenedor{
+    display: flex;
+    justify-content: center;
+}
+.tarjeta__boton-calcular{
+    background-color: #0D0D0D;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    width: 50%;
+    height: 25px;
+    font-size: 14px;
+    transition-duration: 0.2s;
+    margin-top: 5px;
+}
+.tarjeta__boton-calcular:hover{
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb(0, 0, 0);
+    border: 3px #0D0D0D solid;
+}
+.tarjeta__resultado{
+    background-color: rgba(0, 102, 26, 0.20);
+    padding: 5px 5px;
+}
+.tarjeta__resultado-titulo{
+    text-align: center;
+    font-size: 16px;
+}
+.tarjeta__resultado-valor{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+footer p{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio, Moda y Mediana</title>
+    <link rel="stylesheet" href="styles/promedio-moda-mediana.css">
+</head>
+<body>
+
+    <header>
+        <h1>Promedio Mediana y Moda</h1>
+    </header>
+    
+    <main class="main">
+        <section class="tarjeta__lista-usuario">
+            <h2 class="tarjeta__titulo">Carga Tu Lista</h2>
+            <label class="tajeta__label">Ingresa nuevo elemento</label>
+            <input type="number" id="inputLista" class="tarjeta__input">
+            <div>
+                <p id="alertaLista" class="tarjeta__aviso"></p>
+            </div>
+            <div class="tarjeta__contenedor-boton">
+                <button onclick="agregarALista();" type="button" class="tarjeta__boton">Agragar a lista</button>
+            </div>
+            <section>
+                <h2 class="tarjeta__titulo">Visor de lista</h2>
+                <div class="tarjeta__lista">
+                    <ul id="valoresLista">    </ul>
+                </div>
+                <form class="tarjeta__borrar-elemento">
+                    <h2 class="tarjeta__titulo">Borrar Elemento</h2>
+                    <section class="tarjeta__borrar-elemento--form">
+                        <div class="tarjeta__borrar-elemento--input">
+                            <label class="tajeta__label">Ingresa posicion</label>
+                            <input type="number" id="inputBorrarLista" class="tarjeta__input--borrar">
+                            <p id="alertaBorrar" class="tarjeta__aviso"></p>
+                        </div>
+                        <div class="tarjeta__borrar-elemento--boton">
+                            <button onclick="eliminarDeLista();" type="button" class="tarjeta__boton--elminiar">Borrar</button>
+                        </div>
+                    </section>
+                </form>
+            </section>
+        </section>
+
+        <section class="tarjeta__calculos">
+            <h2 class="tarjeta__titulo">Calculos</h2>
+            <div class="tarjeta__img--contenedor">
+                <img src="imagenes/calculador.png" alt="calculador" class="tarjeta__img">
+            </div>
+            <h3 class="tarjeta__subTitulo">Promedio</h3>
+            <p class="tarjeta__parrafo"> Esta es la media aritmética y se calcula agregando un grupo de números y dividiendo por el recuento de esos números.</p>
+            <h3 class="tarjeta__subTitulo">Media</h3>
+            <p  class="tarjeta__parrafo">En el ámbito de la estadística, la mediana representa el valor de la variable de posición central en un conjunto de datos ordenados. Se le denota mediana.</p>
+            <h3 class="tarjeta__subTitulo">Moda</h3>
+            <p class="tarjeta__parrafo">En la estadística, la moda es el valor que aparece con mayor frecuencia en un conjunto de datos.</p>
+            
+            <div class="tarjeta__resultado">
+                <h4 class="tarjeta__resultado-titulo">Promedio</h4>
+                <p id="promedio" class="tarjeta__resultado-valor"></p> 
+                <h4 class="tarjeta__resultado-titulo">Mediana</h4>
+                <p id="mediana" class="tarjeta__resultado-valor"></p> 
+                <h4 class="tarjeta__resultado-titulo">Moda</h4>
+                <p id="moda" class="tarjeta__resultado-valor"></p>
+            </div>
+            <div class="tarjeta__boton-calcular--contenedor">
+                <button class="tarjeta__boton-calcular" onclick="calcularResultado()">Calcular</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Curso Practico JavaScript de Platzi</p>
+        <p>🐱‍🏍 Realizado por DiegoArteaga95 👾</p>
+    </footer>
+
+    <script src="script/pomedio-moda-mediana.js"></script>
+</body>
+</html>
