@@ -1,4 +1,10 @@
-.main{
+body{
+    flex-direction: column;
+}
+.titulo{
+    text-align: center;
+}
+main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
