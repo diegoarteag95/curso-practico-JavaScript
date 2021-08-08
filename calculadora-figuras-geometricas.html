@@ -6,12 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/calculadora-figuras-geometricas.css">
     <title>Figuras Geometricas</title>
+<!-- BASICOS ************************************************************************** -->
+<link rel="icon" href="imagenes/favicon-32x32.png" type="image/png">
+<script src="https://kit.fontawesome.com/ed17f46158.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/basic.css">
+<script defer src="script/index.js"></script>
+<!-- BASICOS ************************************************************************** -->
 </head>
 <body>
 
-    <header>
-        <h1>Calculadora de figuras geometricas</h1>
-    </header>
+<!-- HEADER NAV ************************************************************************** -->
+<header class="header">
+    <nav class="nav">
+        <a href="index.html" class="heade__logo"><img class="heade__logo-img" src="imagenes/logo-js.png" alt="logo"></a>
+        <button class="header__toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="header__menu">
+            <li class="header__menu-item"><a href="index.html" class="header__menu-item--link">Inicio</a></li>
+            <li class="header__menu-item"><a href="calculadora-figuras-geometricas.html" class="header__menu-item--link header_menu-item--ink_active">Figuras</a></li>
+            <li class="header__menu-item"><a href="calculadora-descuentos.html" class="header__menu-item--link">Descuentos</a></li>
+            <li class="header__menu-item"><a href="promedio-moda-mediana.html" class="header__menu-item--link">Promedios</a></li>
+            <li class="header__menu-item"><a href="salarios.html" class="header__menu-item--link">analisis-salarial</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- HEADER FIN ************************************************************************** -->
+
 
     <main class="main-calculadoras">
 <!-- TARJETA CUADRADO ***************************************************************************-->
@@ -66,10 +87,24 @@
 <!-- TARJETA CIRCULO ****************************************************************************-->
 </main>
 
-<footer>
-    <p>Curso Practico JavaScript de Platzi</p>
-    <p>🐱‍🏍 Realizado por DiegoArteaga95 👾</p>
+<!-- FOOTER ****************************************************************************** -->
+<footer class="footer">
+    <section class="footer__redes-cont">
+        <a target="_blank" href="https://www.linkedin.com/in/diego-javier-arteaga-valencia-582589218/" class="footer__redes-link">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/diego_arteaga_valencia/?hl=es"class="footer__redes-link">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/DiegoArteagaV"class="footer__redes-link">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </section>
+    <section class="footer__texto-cont">
+        <p class="footer__texto-p">Curso Practico JavaScript de Platzi - Realizado por 👾 DiegoArteaga95</p>
+    </section>
 </footer>
+<!-- FOOTER FIN ************************************************************************** -->
 
     <script src="script/figuras.js"></script>
 </body>
