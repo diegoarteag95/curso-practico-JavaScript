@@ -1,23 +1,17 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    padding: 0px 20px;
-    margin-bottom: 15px;
+body{
+    flex-direction: column;
 }
-header h1{
-    margin: 0 0;
-}
-
 /* ESTILOS TARJETAS -------------------------------------------------------- */
+.titulo{
+    text-align: center;
+}
 .main-calculadoras{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .tarjeta{
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -106,22 +100,27 @@ header h1{
 /* ESTILOS TARJETAS -------------------------------------------------------- */
 
 .contenedor__lista-cupones{
-    margin-top: 10px;
-    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px 10px;
+    align-items: center;
+    margin: 5px 5px;
 }
 .lista-cupones{
     border: 2px black solid;
     border-radius: 20px;
-    width: 400px;
+    width: 350px;
     background-color: rgba(252, 122, 0, 0.705);
 }
 .lista-cupones h3{
     text-align: center;
+    font-size: 16px;
+}
+.lista-cupones ul{
+    padding: 0 0;
 }
 .lista-cupones li{
+    font-size: 14px;
     list-style: none;
-    text-align: start;
+    text-align: center;
 }
