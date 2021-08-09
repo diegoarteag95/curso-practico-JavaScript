@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/basic.css">
     <script defer src="script/index.js"></script>
 <!-- BASICOS ************************************************************************** -->
+    <link rel="stylesheet" href="styles/salarios.css">
 </head>
 <body>
     
@@ -31,6 +32,37 @@
         </nav>
     </header>
 <!-- HEADER FIN ************************************************************************** -->
+
+    <header class="header__titulo">
+        <h1>Analisis Salarial</h1>
+    </header>
+
+    <main class="main">
+        <section class="tarjeta__lista-contenedor">
+            <h2 class="tarjeta__titulo">Datos cargados en el sistema</h2>
+            <div class="tarjeta__lista">
+                <ul id="valoresLista" class="tarjeta__lista"> 
+                    <li class="tarjeta__lista-titulo">Nombre - Salario</li>
+                </ul>
+            </div>
+        </section>
+        <section class="analisis__lista-contenedor">
+            <h2 class="tarjeta__titulo">Analisis de datos mediana total salarial y mediana top 10</h2>
+            <div class="tarjeta__contenedor-img">
+                <img src="imagenes/calculador.png" alt="calculadora" class="tarjeta__img">
+            </div>
+            <div class="tarjeta__contenedor-botones">
+                <button type="button" class="tarjeta__boton" onclick="promedio(salariosCol)">Mediana Salarial</button>
+                <button type="button" class="tarjeta__boton" onclick="medianaTop10(salariosCol)">Mediana Top 10</button>
+            </div>
+            <h2 class="tarjeta__titulo-resultado">Resultado</h2>
+            <div class="tarjeta__resultado">
+                <p class="tarjeta__resultado-parrafo" id="mediana"></p>
+                <p class="tarjeta__resultado-parrafo" id="top10"></p>
+            </div>
+        </section>
+    </main>
+    
 
 
 

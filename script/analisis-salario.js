@@ -8,6 +8,7 @@ function comparacion(a,b){
 function ordenarArrayNum(array){
     return arrayOrdenada = array.sort(comparacion);
 }
+ordenarArrayNum(salariosCol);
 
 //********************** SUMA ARRAY **************************************************
 function sumaElemetos(array){
@@ -19,8 +20,6 @@ function sumaElemetos(array){
 }
 
 //********************** MEDIANA SALARIOS *********************************************
-const salarioPrueba = [10,500,9,30,50,90,40,50,80,8];
-
 function mediana(array){
     const mitadArray = parseInt(array.length/2);
     if(array.length % 2 == 0){
@@ -41,7 +40,7 @@ function mediana(array){
 function promedio(array){
     const sumaParaPromedio = sumaElemetos(array);
     const promedio = sumaParaPromedio/array.length;
-    return promedio;
+    return document.getElementById(`mediana`).innerHTML = `Media salarial = ${promedio}`;
 }
 
 //********************** MEDIANA TOP 10% *********************************************
@@ -49,9 +48,18 @@ function medianaTop10(array){
     ordenarArrayNum(array)
     const sliceStart = (array.length*90) / 100;
     const sliceEnd = array.length;
-    console.log(sliceStart, sliceEnd);
     const top10 = array.slice(sliceStart,sliceEnd);
-    console.log(top10);
     const medianaTop10 = mediana(top10);
-    return medianaTop10;
+    return document.getElementById(`top10`).innerHTML = `Media Top10 = ${medianaTop10}`;
 }
+
+//********************** ESCRIBIR EN HTML ********************************************
+function dibujarLista(array){
+    l = document.getElementById('valoresLista');
+    array.forEach((e, index) => {
+        const listaElement = document.createElement('p');
+        listaElement.innerHTML = `<strong>${e.name}</strong> - <strong>$</strong>${e.salary}`;
+        l.appendChild(listaElement);
+    });
+}
+dibujarLista(colombia);
